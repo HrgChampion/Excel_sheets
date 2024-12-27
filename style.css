@@ -33,6 +33,10 @@ display: inline-block;
 margin-right: 1rem;
 }
 
+.cellProp-actions-cont > *:hover{
+    cursor: pointer;
+}
+
 .cellProp-actions-cont > select{
     border: none;
     border-radius: 2px;
@@ -166,9 +170,7 @@ display: flex;
     height: 2rem;
     width: 5rem;
     border: 1px solid #dfe4ea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     outline: none;
 }
 
