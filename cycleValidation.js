@@ -52,7 +52,6 @@ function dfsCycleDetection(graphComponentMatrix, srcr, srcc, visited, dfsVisited
     dfsVisited[srcr][srcc] = true;
 
     // A1 -> [ [0, 1], [1, 0], [5, 10], .....  ]
-    console.log(graphComponentMatrix,srcr,srcc);
     for (let children = 0; children < graphComponentMatrix[srcr][srcc].length; children++) {
         let [nbrr, nbrc] = graphComponentMatrix[srcr][srcc][children];
         if (visited[nbrr][nbrc] === false) {

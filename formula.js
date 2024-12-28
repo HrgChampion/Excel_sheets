@@ -1,4 +1,3 @@
-
 for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
         let cell = document.querySelector(`.cell[rid="${i}"][cid="${j}"]`);
@@ -66,7 +65,6 @@ function addChildToGraphComponent(formula, childAddress) {
             let [prid, pcid] = decodeRIDCIDFromAddress(encodedFormula[i]);
             // B1: A1 + 10
             // rid -> i, cid -> j
-            console.log(prid, pcid, crid, ccid);
             graphComponentMatrix[prid][pcid].push([crid, ccid]);
         }
     }
